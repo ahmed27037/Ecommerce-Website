@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.item-image {
+  width: 90%;
+  height: 10rem;
+}
+
+
+
+.item-description {
+  width: 90%; /* Set the width of other elements to 100% */
+}
+.item-price {
+  width: 50%;
+}
+
+

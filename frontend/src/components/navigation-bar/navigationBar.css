@@ -1,0 +1,20 @@
+
+  .website-logo {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .website-logo:hover {
+      transform: scale(1.2) rotate(10deg);
+       /* Adjust the scale factor as needed */
+       /* Add a smooth transition effect */
+    }
+  
+
+
+ 
+
+
+
+ 
+
+

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cartitems-container {
+  display:flex;
+  justify-content: center;
+  height: fit-content;
+  background-color: hsl(253, 55%, 83%);
+
+}
+
+
+.cartitems {
+  margin: 100px auto 0;
+  height: auto;
+  width: 10%;
+  display: grid;
+  grid-template-rows: auto repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 7px;
+  background-color: hsl(252, 30%, 90%);
+  flex: 1;
+
+}
+
+.item-image {
+  width: '100%'; 
+  object-fit: 'cover'
+}
+
+
+.cartitem-container {
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 100%; /* Make the container width 100% */
+  max-width: 250px; /* Set a maximum width if needed */
+}
+
+
+
+
+
+
+
+
+
