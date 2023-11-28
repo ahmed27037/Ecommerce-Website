@@ -3,7 +3,7 @@ require('dotenv').config();
 // mongoose imports
 const mongoose = require('mongoose');
 // imports from another file
-const Store = require('./models/mongooseModel');
+const store = require('./models/mongooseModel');
 const ItemRoutes = require('./routes/items')
 
 // express app

@@ -55,11 +55,11 @@ const deleteItem = async (req, res) => {
 
 // posting one item
 const createItem = async (req, res) => {
-  const {name, price, image} = req.body
+  const {name, price, image, description} = req.body
 
   // add to the database
   try {
-    const item = await Store.create({ name, price, image })
+    const item = await Store.create({ name, price, image, description })
     res.status(200).json(item)
   } catch (error) {
     res.status(400).json({ error: error.message })
