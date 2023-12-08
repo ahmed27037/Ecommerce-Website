@@ -16,10 +16,11 @@ export default function Home({handleOnCart, cartitemcount}) {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const { data } = fetch('https://shopsprint.onrender.com/api/items');
+        const response = await fetch('https://shopsprint.onrender.com/api/items');
+        const data = await response.json();
   
         setItems(data);
-        setOriginalItems(data); 
+        setOriginalItems(data);
         console.log(data);
       } catch (error) {
         console.error('Error fetching items:', error.message);
@@ -27,8 +28,10 @@ export default function Home({handleOnCart, cartitemcount}) {
         console.error(error);
       }
     };
+  
     fetchItems();
   }, []);
+  
 
 
   
