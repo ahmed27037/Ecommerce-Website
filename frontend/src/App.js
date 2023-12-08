@@ -7,7 +7,6 @@ import Cart from './pages/cart/cart';
 import { useState } from 'react';
 
 
-
 function App() {
 
   const [cartItems, setCartItems] = useState([]);

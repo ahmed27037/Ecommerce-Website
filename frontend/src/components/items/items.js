@@ -4,6 +4,7 @@ import React from 'react';
 import { Grid, Typography, Button} from '@mui/material';
 
 function Items({ items, handleOnCart }) {
+  console.log(items)
   return (
     <Grid 
     container
@@ -14,7 +15,8 @@ function Items({ items, handleOnCart }) {
       height: "70%",
       display: "grid"}}>
 
-      {items.map((item) => (
+      {Array.isArray(items) ?
+      items.map((item) => (
         <Grid 
           item 
           key={item._id} 
@@ -52,7 +54,10 @@ function Items({ items, handleOnCart }) {
             </Button>
           <Typography sx={{width: "100%", height: "10fr", backgroundColor: "lightblue", alignSelf: "center", marginTop: "16px", margin: '0', overflow: "hidden"}} >Description : {item.description}</Typography>
         </Grid>
-      ))}
+
+      )): (
+        <p>Error: Items is not an array</p>
+      )}
     </Grid>
   );
 }
