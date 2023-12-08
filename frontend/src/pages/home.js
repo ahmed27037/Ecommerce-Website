@@ -16,7 +16,7 @@ export default function Home({handleOnCart, cartitemcount}) {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const { data } = await axios.get('https://shopsprint.onrender.com/api/items/');
+        const { data } = await axios.get('/api/items/');
   
         setItems(data);
         setOriginalItems(data); 
