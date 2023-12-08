@@ -17,8 +17,7 @@ export default function Cart({ cartItems, setCartItemCount, setCartItems }) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar sx = {{ transition: 'transform 0.2s ease-in-out', // Added transition property
-                  '&:hover': { transform: 'scale(1.01) translate(5px, -5px)'}, }}position="static" style={{ background: 'linear-gradient(0deg, rgba(0, 0, 255, 0.9), rgba(0, 0, 210, 0.95))' }}>
+      <AppBar position="static" style={{ background: 'linear-gradient(0deg, rgba(0, 0, 255, 0.9), rgba(0, 0, 210, 0.95))' }}>
         <Grid container alignItems="center" spacing={2} justifyContent="space-around">
           <Grid item>
             <Link to="/home">
