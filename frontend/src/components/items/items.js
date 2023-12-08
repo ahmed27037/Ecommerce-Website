@@ -4,7 +4,6 @@ import React from 'react';
 import { Grid, Typography, Button} from '@mui/material';
 
 function Items({ items, handleOnCart }) {
-  console.log(items)
   return (
     <Grid 
     container

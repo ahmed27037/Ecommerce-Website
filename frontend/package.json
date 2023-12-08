@@ -4,7 +4,6 @@
   "private": true,
   "main": "index.js",
   "homepage": "./",
-  "proxy": "https://shopsprint.onrender.com",
   "dependencies": {
     "@auth0/auth0-react": "^2.2.3",
     "@emotion/react": "^11.11.1",
