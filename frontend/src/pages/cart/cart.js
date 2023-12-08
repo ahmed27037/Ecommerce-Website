@@ -2,7 +2,7 @@ import "./cart.css";
 import { Link } from "react-router-dom";
 import { Grid, Box, AppBar, Button, Typography } from "@mui/material";
 
-export default function Cart({ cartItems, setCartItemCount, setCartItems, handleOnBring }) {
+export default function Cart({ cartItems, setCartItemCount, setCartItems }) {
   const handleOnClear = () => {
     setCartItemCount(0);
     setCartItems([]);
@@ -30,9 +30,6 @@ export default function Cart({ cartItems, setCartItemCount, setCartItems, handle
                 src="https://th.bing.com/th/id/OIG.6QT6aqp4BqTLGfEa91vH?w=1024&h=1024&rs=1&pid=ImgDetMain"
               />
             </Link>
-          </Grid>
-          <Grid item>
-            <Button sx={{ backgroundColor: 'yellow', color: "black" }} onClick={() => handleOnBring()} className="bringoldcart">Bring Old Cart Items</Button>
           </Grid>
           <Grid item>
             <Button sx={{ backgroundColor: 'yellow', color: "black" }} onClick={() => handleBuyAll()} className='buyall'>Buy All</Button>

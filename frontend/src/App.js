@@ -21,16 +21,7 @@ function App() {
       ...prevItems,
       { name: item.product_name, price: item.price, image: item.image, description: item.description, _id: item._id },
     ]);
-    setCartItemCount((prevCount) => (prevCount + 1));
-     
-    let cartcountSerialized = JSON.stringify(cartitemcount)
-    let cartitemsSerialized = JSON.stringify(cartItems)
-    
-    localStorage.setItem("mycartcount" , cartcountSerialized)
-     localStorage.setItem("mycartitems" ,  cartitemsSerialized)
-
-
-   
+    setCartItemCount((prevCount) => (prevCount + 1));     
      
     }
 
@@ -40,15 +31,6 @@ function App() {
 
 
  // handleOnClear 
-  
-
-
-const handleOnBring = () => {
-  let cartitemstorage = JSON.parse(localStorage.getItem("mycartitems"))
-  let cartcountstorage = JSON.parse(localStorage.getItem("mycartcount"))
-  setCartItemCount(cartcountstorage);
-  setCartItems(cartitemstorage);
-}
 
 
   return (
@@ -61,7 +43,7 @@ const handleOnBring = () => {
           />
           <Route path='/home' element={<Home  handleOnCart={handleOnCart} cartitemcount= {cartitemcount} />} />
           <Route path='*' element={<NotFound />} />
-          <Route path='/cart' element={<Cart cartItems={cartItems} setCartItems = {setCartItems} setCartItemCount = {setCartItemCount} handleOnBring = {handleOnBring}/>} />
+          <Route path='/cart' element={<Cart cartItems={cartItems} setCartItems = {setCartItems} setCartItemCount = {setCartItemCount}/>} />
         </Routes>
       </BrowserRouter>
     </div>
