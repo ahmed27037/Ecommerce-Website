@@ -78,6 +78,7 @@ export default function Cart({ cartItems, setCartItemCount, setCartItems, handle
                     className="item-image"
                     src={item.image}
                     alt="Item"
+                    style={{marginBottom: '2rem'}}
                   />
                   <Box sx={{ display: 'flex', justifyContent: 'center',  alignItems: 'center', background:'linear-gradient(45deg, yellow, lightyellow)', width:'100%', height: '3.5rem', borderRadius: '10px 10px 0 0 ' }}>
                   <Typography >
