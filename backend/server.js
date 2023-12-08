@@ -4,7 +4,8 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 // imports from another file
 const store = require('./models/mongooseModel');
-const ItemRoutes = require('./routes/items')
+const ItemRoutes = require('./routes/items');
+const cors = require('cors')
 
 // express app
 const express = require('express');
@@ -17,6 +18,8 @@ const PORT = process.env.PORT
 
 
 // Middleware
+app.use(cors());
+
 app.use(express.json())
 
 app.use('/api/items', ItemRoutes)
