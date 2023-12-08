@@ -17,20 +17,25 @@ export default function Home({handleOnCart, cartitemcount}) {
     const fetchItems = async () => {
       try {
         const response = await fetch('https://shopsprint.onrender.com/api/items');
+  
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+  
         const data = await response.json();
+  
+        console.log('Fetched data:', data); // Log the fetched data
   
         setItems(data);
         setOriginalItems(data);
-        console.log(data);
       } catch (error) {
         console.error('Error fetching items:', error.message);
-        // Log the entire error object for more details
-        console.error(error);
       }
     };
   
     fetchItems();
   }, []);
+  
   
 
 
