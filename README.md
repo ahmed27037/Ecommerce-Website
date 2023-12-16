@@ -35,6 +35,6 @@ and if you want to add items make a post request like this :
 
 App should look like this
 ![Screenshot (154)](https://github.com/ahmed27037/Ecommerce-Website/assets/145661706/5052f56e-bdfc-4cef-82f1-7aa5bdf69d62)
-Description of the macbook changed but you get the point 
+I changed the description of macbook before sending it thats why its different
 
 
