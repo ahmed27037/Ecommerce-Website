@@ -4,9 +4,12 @@
 
 ### steps to copy this on your own machine
 
+
 make a .env file in the backend with the vairables MONGODB_URI = and PORT = 
 
+
 set the PORT to 4000 and the MONGODB_URI to whatever your database is and then just follow the schema for the mongodb databse as shown in the models folder in mongooseModels.js in the backend 
+
 
 Make sure your database or collection is in this format:
 [
