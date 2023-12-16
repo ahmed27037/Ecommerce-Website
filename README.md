@@ -2,11 +2,13 @@
 
 (    Coming soon: the ability to post and update your item on the website itself instead of post man   )
 
+### steps to copy this on your own machine
 
-This Repo has only 1 commit because I deleted it and published it again as it had sensitive information
+make a .env file in the backend with the vairables MONGODB_URI = and PORT = 
 
+set the PORT to 4000 and the MONGODB_URI to whatever your database is and then just follow the schema for the mongodb databse as shown in the models folder in mongooseModels.js in the backend 
 
-Also the PORT and the Mongodb Uri are empty so you just have to make a .env file in the backend with the vairables MONGODB_URI = and PORT = and set the PORT to 4000 and the MONGODB_URI to whatever your database is and then just follow the schema for the mongodb databse as shown in the models folder in mongooseModels.js in the backend make sure your database or collection is in this format:
+Make sure your database or collection is in this format:
 [
   name: {
     type: String,
@@ -26,6 +28,7 @@ Also the PORT and the Mongodb Uri are empty so you just have to make a .env file
   }
 
 ]
+
 
 database make sure you get the Connected to the database and Listening for requests on port 4000 in your console 
 also when you make the collection always make a post request first to see if it works if you can make a post request and you can see your item in the get request or the website then it works first  just start a 
