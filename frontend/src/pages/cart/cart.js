@@ -39,9 +39,6 @@ export default function Cart({ cartItems, setCartItemCount, setCartItems }) {
         </Grid>
         </AppBar>
         <Grid container sx={{ marginTop: "20px", display: "flex", justifyContent: "center", flexDirection: "column" }}>
-          <Grid item>
-            <Typography variant = 'h3' sx = {{backgroundColor: 'hsl(252, 57%, 79%)'}}>Here are your Items : </Typography>
-          </Grid>
 
           <Grid container sx={{ 
           marginTop: "20px",

@@ -18,8 +18,7 @@ function NavigationBar({ cartitemcount, handleOnChange, handleOnClick, ClearFiel
   
   return (
     <Box sx={{ flexGrow: 1}}>
-    <AppBar position = "static"sx = {{transition: 'transform 0.5s ease-in-out', // Added transition property
-                  '&:hover': { transform: 'scale(1.01) translate(1px, -1px)'}, }}>
+    <AppBar position = "static"> 
     <Grid container alignItems="center" spacing={2} justifyContent="space-between">
     <Grid item>
     <Link to="/home">
